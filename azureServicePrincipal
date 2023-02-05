@@ -1,0 +1,21 @@
+
+subscription id
+c68eec07-3550-40d2-ac35-81176f64cf94'
+
+resource gr id rg-az400-eshoponweb-aran
+
+az ad sp create-for-rbac --name GH-Action-eshoponweb --role contributor --scopes /subscriptions/c68eec07-3550-40d2-ac35-81176f64cf94/resourceGroups/rg-az400-eshoponweb-aran --sdk-auth
+
+azure service principal (secret used in github ) which was created after privious azure bash command
+{
+  "clientId": "01434c97-ca72-49e8-b956-27dabf88e844",
+  "clientSecret": "blR8Q~sdn211Q.rY5gBbgaxaGBDrHYRHOg-pTbcB",
+  "subscriptionId": "c68eec07-3550-40d2-ac35-81176f64cf94",
+  "tenantId": "274102ec-cd24-4af2-a4c2-832941ce526f",
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+  "resourceManagerEndpointUrl": "https://management.azure.com/",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com/",
+  "managementEndpointUrl": "https://management.core.windows.net/"
+}
